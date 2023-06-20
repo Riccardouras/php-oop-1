@@ -15,9 +15,9 @@ class Movie {
     public function getDetails() {
         $genresVar = " ";
         foreach ($this->genre as $genres) {
-            $genresVar .= $genres . ", ";
+            $genresVar .= $genres . " ";
         }
-        return "Title: " . $this->title . "<br>Genre: " . $this->$genresVar . "<br>Year: " . $this->year;
+        return "Title: " . $this->title . "<br>Genre: " . $genresVar . "<br>Year: " . $this->year;
     }
 }
 // creo oggetto movie
